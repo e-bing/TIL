@@ -119,6 +119,11 @@
   ```jsx
   const even = arr.filter(num => num % 2 === 0);
   ```
+  
+  ```jsx
+  const numbers = [1, 2, 3, 4, 5];
+  const evenNumbers = numbers.filter(num => num % 2 === 0); // [2, 4]const even = arr.filter(num => num % 2 === 0);
+  ```
 
 - **reduce** 배열을 누적하여 하나의 값으로 만든다. 합계, 곱, 객체 변환 등 다양하게 활용된다.
   
@@ -144,6 +149,26 @@
   ```jsx
   arr.find();
   arr.findIndex();
+  ```
+
+- **every** 배열의 모든 요소가 조건을 만족하면 true, 그렇지 않으면 false를 반환한다.
+  
+  ```jsx
+  const numbers = [2, 4, 6, 8];
+  const allEven = numbers.every(num => num % 2 === 0); // true
+  
+  const mixed = [2, 3, 6, 8];
+  const allEven2 = mixed.every(num => num % 2 === 0); // false
+  ```
+
+- **some** 배열의 요소 중 하나라도 조건을 만족하면 true, 그렇지 않으면 false를 반환한다.
+  
+  ```jsx
+  const numbers = [1, 2, 3, 4, 5];
+  const hasEven = numbers.some(num => num % 2 === 0); // true
+  
+  const allOdd = [1, 3, 5];
+  const hasEven2 = allOdd.some(num => num % 2 === 0); // false
   ```
 
 ### **문자열 관련 함수**
